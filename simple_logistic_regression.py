@@ -61,17 +61,3 @@ plt.show()
 
 
 
-y_train_probas = logmodel.predict_proba(os_data_X)
-skplt.metrics.plot_roc(os_data_y, y_train_probas, plot_micro=False, plot_macro=False, classes_to_plot=1,
-                       title='Neural network')
-plt.savefig('neuro.png')
-plt.show()
-
-y_test_probas = logmodel.predict_proba(X)
-skplt.metrics.plot_roc(y, y_test_probas, plot_micro=False, plot_macro=False, classes_to_plot=1,
-                       title='SVM')
-plt.savefig('svm.png')
-plt.show()
-
-
-
