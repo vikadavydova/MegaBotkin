@@ -51,4 +51,4 @@ results = model.fit(
  batch_size = 32,
  validation_data = (X_test, y_test
 ))
-print("Test-Accuracy:", np.mean(results.history["val_acc"]))
+print("Test-Accuracy:", np.mean(results.history["val_accuracy"]))
