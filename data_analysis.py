@@ -81,17 +81,11 @@ print(df_sum)
 df_sum.to_csv(f"./csv_datasets/{dataframe_name}")
 print(df_sum.isna().sum())
 
-#check_for_nan = df_sum['MCQ160B'].isna().sum()
-#print(check_for_nan)
-
-
 #here we can concatenate the columns
 #df_sum['ACD011A'].fillna(df_sum['ACD010A'], inplace=True)
 #del df_sum['ACD010A']
 #print(df_sum)
 
-#print(df_cdq_1718)
-#print(df_cdq_1516)
 
 #print(df_cdq_9918.isna().sum())
 #print(check_df.isna().sum())
